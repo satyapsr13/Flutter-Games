@@ -1,16 +1,6 @@
 # spin_wheel_game
+ <img width="199" alt="image" src="https://user-images.githubusercontent.com/73766765/235323699-72a7b474-bb56-4ffc-8276-b376487ee223.png">
+ 
+ <img width="198" alt="image" src="https://user-images.githubusercontent.com/73766765/235323726-ef88acf3-5d79-4c34-8f69-401ccebed485.png">
 
-A new Flutter project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
