@@ -1,7 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:spin_wheel_game/game.dart';
+
+import 'SpinWheelGame/game.dart';
+import 'home_screen.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
@@ -19,7 +21,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'homepage',
       debugShowCheckedModeBanner: false,
-      home: Game(),
+      home: GameHomeScreen(),
 //routes: {  targetscreen.routeName:(ctx)=>const targetscreen(),},
     );
   }

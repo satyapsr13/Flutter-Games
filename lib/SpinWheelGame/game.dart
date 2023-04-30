@@ -1,18 +1,19 @@
 // ignore_for_file: prefer_const_constructors
-import 'dart:math';
 
-import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
+import 'package:flutter/material.dart';
+
 // import 'package:math/ma  '
-class Game extends StatefulWidget {
-  const Game({super.key});
+class SpinWheelGameScreen extends StatefulWidget {
+  const SpinWheelGameScreen({super.key});
 
   @override
-  State<Game> createState() => _GameState();
+  State<SpinWheelGameScreen> createState() => _SpinWheelGameScreenState();
 }
 
-class _GameState extends State<Game> with SingleTickerProviderStateMixin {
+class _SpinWheelGameScreenState extends State<SpinWheelGameScreen>
+    with SingleTickerProviderStateMixin {
   List<double> sectors = [
     100,
     20,
@@ -200,14 +201,30 @@ class _GameState extends State<Game> with SingleTickerProviderStateMixin {
       top: 50,
       left: 0,
       right: 0,
-      child: Text(
-        "Fortune Wheel ",
-        textAlign: TextAlign.center,
-        style: TextStyle(
-          color: Colors.white,
-          fontSize: 24,
-          fontWeight: FontWeight.bold,
-        ),
+      child: Row(
+        children: [
+          IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: const Icon(
+                Icons.arrow_back_ios,
+                size: 20,
+                color: Colors.white,
+              )),
+          const Spacer(),
+          Text(
+            "Fortune Wheel ",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+
+          const Spacer(),
+        ],
       ),
     );
   }
