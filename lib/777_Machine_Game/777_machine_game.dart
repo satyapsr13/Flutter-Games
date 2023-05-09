@@ -14,6 +14,9 @@ class _Machine777GameState extends State<Machine777Game> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('777 Machine Game'),
+
+
+        //
       ),
       //
       body: Column(
